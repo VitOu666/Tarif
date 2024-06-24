@@ -1,0 +1,48 @@
+.card {
+    font-family: sans-serif;
+    text-align: center;
+    width: 20vw;
+}
+.top {
+    color: white;
+}
+.cardTitle {
+    font-size: 1.5em;
+    margin: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cardPrice {
+    height: 120px;
+    margin: 2px;
+    padding-top: 30px;
+}
+.price {
+    font-size: 3em;
+}
+.currency {
+    display: flex;
+    margin-left: 40px;
+}
+.priceLine {
+    display: flex; /* Use flexbox to place price and /мес on the same line */
+    align-items:end;
+    margin-left: 75px;
+}
+
+.cardSpeed {
+    color: rgb(70, 70, 70);
+    background-color: rgb(235, 235, 235);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 2px;
+}
+.cardInfo {
+    color: rgb(70, 70, 70);
+    background-color: rgb(210, 209, 209);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 2px;
+}
