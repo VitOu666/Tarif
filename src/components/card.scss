@@ -1,21 +1,26 @@
-.card {
+.cardPriceContainer {
     font-family: sans-serif;
     text-align: center;
     width: 20vw;
+    transition: all 0.3s ease;
 }
-.top {
-    color: white;
+.cardPriceContainer.specialCard {
+    transform: scale(1.1); /* Make the third card slightly larger */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to the third card */
 }
-.cardTitle {
+
+.titleDiv {
     font-size: 1.5em;
     margin: 2px;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: white;
 }
-.cardPrice {
+.priceDiv {
     height: 120px;
     margin: 2px;
     padding-top: 30px;
+    color: white;
 }
 .price {
     font-size: 3em;
@@ -30,14 +35,14 @@
     margin-left: 75px;
 }
 
-.cardSpeed {
+.speedDiv {
     color: rgb(70, 70, 70);
     background-color: rgb(235, 235, 235);
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 2px;
 }
-.cardInfo {
+.infoDiv {
     color: rgb(70, 70, 70);
     background-color: rgb(210, 209, 209);
     padding-top: 20px;
