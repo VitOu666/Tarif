@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Card from './components/Card';
 
 
 const App = () => {
+  const [selectedCard, setSelectedCard] = useState(null);
   const cards = [
     {
       id: 1,
@@ -30,6 +31,9 @@ const App = () => {
         colour: "#333a44"
       }
   ];
+  const handleCardClick = (index) => {
+    setSelectedCard(index);
+  };
 
   return (
     <div className="cardContainer">
@@ -39,7 +43,8 @@ const App = () => {
           colour={card.colour}
           price={card.price}
           speed={card.speed}
-          className={index === 2 ? 'specialCard' : ''}
+          className={selectedCard === index ? 'specialCard' : ''}
+          onClick={() => handleCardClick(index)}
         />
       ))}
     </div>

@@ -3,6 +3,7 @@
     text-align: center;
     width: 20vw;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 .cardPriceContainer.specialCard {
     transform: scale(1.1); /* Make the third card slightly larger */

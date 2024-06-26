@@ -2,9 +2,9 @@ import React from "react";
 import '../components/card.scss';
 
 
-const Card = ({ colour, price, speed, className }) => {
+const Card = ({ colour, price, speed, className, onClick }) => {
     return (
-    <div className={`cardPriceContainer ${className}`}>
+    <div className={`cardPriceContainer ${className}`} onClick={onClick}>
         <div style={{ backgroundColor: colour, backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))' }}className="titleDiv">
             <p>Безлимитный {price}</p>
         </div>
